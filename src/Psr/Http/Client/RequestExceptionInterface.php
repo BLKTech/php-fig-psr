@@ -1,8 +1,7 @@
 <?php
 
-namespace Psr\Http\Client\Exception;
+namespace Psr\Http\Client;
 
-use Psr\Http\Client\ClientException;
 use Psr\Http\Message\RequestInterface;
 
 /**
@@ -12,7 +11,7 @@ use Psr\Http\Message\RequestInterface;
  *      - Request is invalid (e.g. method is missing)
  *      - Runtime request errors (e.g. the body stream is not seekable)
  */
-interface RequestException extends ClientException
+interface RequestExceptionInterface extends ClientExceptionInterface
 {
     /**
      * Returns the request.
