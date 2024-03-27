@@ -3,3 +3,4 @@ tmp
 .php-cs-fixer.cache
 node_modules
 /log
+/cache
